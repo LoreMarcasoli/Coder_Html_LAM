@@ -37,11 +37,10 @@ header .logo {
 padding: 20px;
 }   
 
-
 main{ 
     padding:50px 50px;
     box-sizing: border-box;
-    border: solid 2px black;
+    /*border: solid 2px black;*/
 }
 
 table{
