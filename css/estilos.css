@@ -43,6 +43,22 @@ main{
     /*border: solid 2px black;*/
 }
 
+
+main h1{
+    margin-top: 45px;
+    font-size: 22px;
+    text-align: center;
+    font-style: italic;
+    font-family:'Times New Roman', Times, serif;
+}
+
+main h3{
+    font-size: 18px;
+    text-align: center;
+    font-style: italic;
+    font-family:'Times New Roman', Times, serif;
+}
+
 table{
     width: 100%;
     max-width: 700px;
@@ -50,20 +66,17 @@ table{
 
 .Whatsapp{
     position: fixed;
-    right: 30px;
+    right: 110px;
     bottom: 30px;
 }
 
+
 #TextoFamilia{
     color:black;
-    background-color: beige;
     font-size: 16px;
     font-weight: bold;
     font-style: italic;
-    position: relative;
-    top: -330px;
-    left: -480px;
-    justify-content;
+    justify-items: center;
 }
 
 footer {
@@ -88,3 +101,54 @@ footer table tr td ul{
 
 }
 
+.contenedorGrid{   
+    margin-left: 8%;
+    margin-right: 8%;
+    width: 80%;
+    height: 80%;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 33.33% 33.33% 33.33%;
+    margin-top: 10%;
+    column-gap: 10px;
+    row-gap: 50px;
+}
+
+.contenedorGrid div{
+    text-align: center;
+    background-color: #eeeeee;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.contenedorfamilia{   
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    display: grid;}
+
+#ContenedorArea{
+    display: grid;
+    height: auto;
+    grid-template-areas: "Columna Contenido Columna2" ;
+    grid-template-columns: 15% 70% 15%;
+    grid-template-rows: auto ;
+    }
+
+#ColumnaArea{
+    grid-area: Columna;
+    align-content:center;
+    align-items: center;
+    padding: 5%;
+    background-color:rgb(250, 179, 96);
+}
+
+#ColumnaArea2{
+    grid-area: Columna2;
+    background-color: rgb(250, 179, 96);
+}
+
+ #ContenidoArea{
+    grid-area: Contenido;
+    background-color: rgb(235, 234, 230);
+}
