@@ -1,95 +1,154 @@
+header {
+        background-color: #89ce36;
+        padding: 20px;
+        
+        text-align: center;
+        font-size: 16px;
+        box-sizing: border-box;
+        font-style: italic;
+        font-family:'Times New Roman', Times, serif;
+} 
+header nav{
+    display: flex;
+    flex-direction: row;
+    border: solid 2px white;    
+}
 
+header ul{
+        display: flex;
+        flex-direction: row;
+        list-style:  none;
+}
 
-*   
-    {
-    margin:0; 
-    padding: 0;
-    box-sizing: border-box;
-    }
+header ul li{
+    margin-left: 10px;
+    padding: 10%;
+    justify-content: start;
+}
 
-.logo {
-        position: absolute;
-        left:10px;
-        top:20px;
-        width:100px;
-      }    
-
-h1 
-    {
-    color: #4d4c4c;
-    text-align: center;
-    background-color: #8cc04e;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 60px;
-    }
-h2 
-    {
-    color: #4d4c4c;
-    font-family: sans-serif;
-    text-align: center;
-    background-color: #8cc04e;
-    font-size: 60px;
-    }
-
-option
-    {
-    background-color: black;
+header ul li a{
     color: white;
-    }  
-    
-section
-    {
-    background-color: #a6a6a6;
-    background: linear-gradient(to right,#a6a6a6, #FFFFFF);
-    }
-            
-a
-    {color:#737373;
-    font-weight: bold;
     text-decoration: none;
-    }
-
-a:visited
-    {color:blueviolet;
     font-weight: bold;
-    text-decoration: none;
-    }
+    font-size: 18px;
+}
 
-.container1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}   
-    
-.container2 {
-  display: flex;
-  justify-content: flex-end; /* Alinea horizontalmente a la derecha */
-  align-items: flex-end; /* Alinea verticalmente al final */
-  /* Otros estilos para el contenedor */
-}  
-
-.container4 {
-    display: flex;
-    justify-content: right;
-    align-items: center;
+header .logo {
+padding: 20px;
 }   
 
-.container5 {
-  display: flex;
-  justify-content: flex-end; /* Alinea horizontalmente a la derecha */
-  align-items: flex-end; /* Alinea verticalmente al final */
-  /* Otros estilos para el contenedor */
-}  
+main{ 
+    padding:50px 50px;
+    box-sizing: border-box;
+    /*border: solid 2px black;*/
+}
 
-Body
-    {
-    background-color: #a6a6a6;
-    background: linear-gradient(to right,#a6a6a6, #FFFFFF);
-    }
 
-    h3
-    {
+main h1{
+    margin-top: 45px;
+    font-size: 22px;
     text-align: center;
-    text-emphasis: none;
-    font-family: 'Arial Narrow Bold';
+    font-style: italic;
+    font-family:'Times New Roman', Times, serif;
+}
+
+main h3{
+    font-size: 18px;
+    text-align: center;
+    font-style: italic;
+    font-family:'Times New Roman', Times, serif;
+}
+
+table{
+    width: 100%;
+    max-width: 700px;
+}
+
+.Whatsapp{
+    position: fixed;
+    right: 110px;
+    bottom: 30px;
+}
+
+
+#TextoFamilia{
+    color:black;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    justify-items: center;
+}
+
+footer {
+    background-color: #ede7e2;
+    padding: 20px;
+    flex-direction: row;
+}
+
+footer table tr td p{
+    font-size: 15px;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bold;
+    color:brown;
+}
+
+footer table tr td ul{
+    font-size: 13px;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bold;
+    color:brown;
+    list-style:  none;
+
+}
+
+.contenedorGrid{   
+    margin-left: 8%;
+    margin-right: 8%;
+    width: 80%;
+    height: 80%;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 33.33% 33.33% 33.33%;
+    margin-top: 10%;
+    column-gap: 10px;
+    row-gap: 50px;
+}
+
+.contenedorGrid div{
+    text-align: center;
+    background-color: #eeeeee;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.contenedorfamilia{   
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    display: grid;}
+
+#ContenedorArea{
+    display: grid;
+    height: auto;
+    grid-template-areas: "Columna Contenido Columna2" ;
+    grid-template-columns: 15% 70% 15%;
+    grid-template-rows: auto ;
     }
+
+#ColumnaArea{
+    grid-area: Columna;
+    align-content:center;
+    align-items: center;
+    padding: 5%;
+    background-color:rgb(250, 179, 96);
+}
+
+#ColumnaArea2{
+    grid-area: Columna2;
+    background-color: rgb(250, 179, 96);
+}
+
+ #ContenidoArea{
+    grid-area: Contenido;
+    background-color: rgb(235, 234, 230);
+}
