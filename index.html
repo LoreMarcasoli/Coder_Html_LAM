@@ -6,23 +6,55 @@
         <meta name="description" content="Encontra las mejores propiedades y proyectos de inversión de zona sur">
         <title>Inmobiliaria Diqmar</title>
         <link rel="stylesheet" href="css/estilos.css">    
+        <!--Obtención Fuente-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pinyon+Script&display=swap" rel="stylesheet">
+        <!--Bootstrap*-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     </head>
     <body>
 
-        <header>
-            <nav>
-                <a href="index.html">
-                    <img src="images/Logo_nuevo.PNG" alt="Logo" class="logo" width="90">
-                </a>
-                <ul>
-                    <li><a href="../index.html" target="_blank" rel="noopener">Inicio </a></li>
-                    <li><a href="./Pages/Comprar.html" target="_blank" rel="noopener">Comprar </a></li>
-                    <li><a href="./Pages/Alquilar.html" target="_blank" rel="noopener">Alquilar </a></li>
-                    <li><a href="./Pages/Servicios.html" target="_blank" rel="noopener">Servicios </a></li>
-                    <li><a href="./Pages/Nosotros.html" target="_blank" rel="noopener">Nosotros </a></li>
-                    <li><a href="./Pages/contacto.html"  target="_blank" rel="noopener">Contacto </a></li>
-                </ul>
-            </nav>
+        <header class="header-ppal">
+            <div class="oscurecer-fondo">
+                <div class="index-header">
+               <!--Bootstrap-->
+                    <nav class="navbar navbar-expand-lg position-fixed w-100">
+                        <div class="container-fluid">
+                            
+                            <img class="logotipo-imagen-nav" src="../images/Logo_nuevo.PNG" alt="Logo" class="logo">
+                            
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                    <li class="nav-item">
+                                        <a href="../index.html" target="_blank" rel="noopener"class="nav-link" href="#">INICIO</a>
+                                    </li>   
+                                    <li class="nav-item">
+                                        <a href="../Pages/Comprar.html" target="_blank" rel="noopener" class="nav-link" href="#">COMPRAR</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="../Pages/Alquilar.html" target="_blank" rel="noopener" class="nav-link" href="#">ALQUILAR</a>
+                                    </li>     
+                                    <li class="nav-item">
+                                        <a href="../Pages/Servicios.html" target="_blank" rel="noopener" class="nav-link" href="#">SERVICIOS</a>
+                                    </li>     
+                                    <li class="nav-item">
+                                        <a href="../Pages/Nosotros.html" target="_blank" rel="noopener" class="nav-link" href="#">NOSOTROS</a>
+                                    </li>                                      
+                                    <li class="nav-item">
+                                        <a a href="../Pages/contacto.html"  target="_blank" rel="noopener" class="nav-link" href="#">CONTACTO</a>
+                                    </li>                                                                                          
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                    <!--Bootstrap-->
+                </div>
+            </div>
         </header>
 
         <main>
@@ -31,77 +63,106 @@
                         <img src="images/Familia.png" alt="familia" width="100%">
                         <h3 id="TextoFamilia">"DIQMAR" es una empresa familiar dedicada al asesoramiento inmobiliario desde hace muchos años. Acompañamos a nuetros clientes en todas sus operaciones</h3>
                     </div>
+
                     <div id="ContenidoArea">
                         
                         <h1>Somos la mejor opción en emprendimientos de bienes raices</h1>
                         <h3>Te brindamos asesoramiento de inversión según tus espectativas</h2>
-                        <div class="contenedorGrid">
-                            
-                            <div>
+
+                        <Section class="Card-casa-container">      
+
+                            <section class="Card-casa">
                                 <a href="https://terreno.mercadolibre.com.ar/MLA-1798508360-prados-del-oeste-barrio-cerrado-moreno-_JM#position=-1&search_layout=grid&type=item&tracking_id=6a33fd10-db87-492a-8105-2ccc9a97c7b8BB=1&c_component=bb&c_pos=1&c_campaign=bb&c_client=search"  target="_blank" rel="noopener">
-                                    <img src="images/Emprendimiento1.PNG" alt="Emprendimiento Prado Del Oeste" width="100%">
+                                    <img class="Card-casa-imagen" src="images/Emprendimiento1.PNG" alt="Emprendimiento Prado Del Oeste" width="100%">
                                 </a>
-                                <h5>Prado Del Oeste</h5>
-                            </div>
-                            
-                            <div>
+                                <h3 class="my-3 fs-4 card-casa-titulo">Emprendimiento 1</h3>
+                                <p class="text-center">Emprendimiento Prado Del Oeste</p>
+                                <p class="fw-medium text-center">USD 150,000.00</p>
+                                <BUtton class="card-cada-btn my-5">COMPRAR</BUtton>
+                            </section>
+
+
+                            <section class="Card-casa">
                                 <a href="https://casa.mercadolibre.com.ar/MLA-2040653866-barrio-privado-ayres-de-pilar-_JM#polycard_client=search-nordic&position=15&search_layout=grid&type=item&tracking_id=a111a2b4-8d15-4d5d-94dd-4b57aae605dc"   target="_blank" rel="noopener">
-                                    <img src="images/Emprendimiento2.PNG" alt="Aires De Pilar" width="100%">
-                                </a>
-                                <h5>Aires De Pilar</h5>
-                            </div>
+                                    <img class="Card-casa-imagen"src="images/Emprendimiento2.PNG" alt="Aires De Pilar" width="100%">
+                                </a>            
+                                <h3 class="my-3 fs-4 card-casa-titulo">Emprendimiento 2</h3>
+                                <p class="text-center">Aires De Pilar</p>
+                                <p class="fw-medium text-center">USD 200,000.00</p>
+                                <BUtton class="card-cada-btn my-5">COMPRAR</BUtton>
+                            </section>
 
-                            <div>
+
+                            <section class="Card-casa">
                                 <a href="https://terreno.mercadolibre.com.ar/MLA-2084483746-barrio-privado-costa-esmeralda-_JM#polycard_client=search-nordic&position=23&search_layout=grid&type=item&tracking_id=a111a2b4-8d15-4d5d-94dd-4b57aae605dc"   target="_blank" rel="noopener">
-                                    <img src="images/Emprendimiento3.PNG" alt="Costa Esmeralda" width="100%">
+                                    <img class="Card-casa-imagen" src="images/Emprendimiento3.PNG" alt="Costa Esmeralda" width="100%">
                                 </a>
-                                <h5>Costa Esmeralda</h5>
-                            </div>
-                            
-                            <div>
+                                <h3 class="my-3 fs-4 card-casa-titulo">Emprendimiento 3</h3>
+                                <p class="text-center">Costa Esmeralda</p>
+                                <p class="fw-medium text-center">USD 120,000.00</p>
+                                <BUtton class="card-cada-btn my-5">COMPRAR</BUtton>
+                            </section>
+
+
+                            <section class="Card-casa">
                                 <a href="https://terreno.mercadolibre.com.ar/MLA-1991259404-lotes-en-puertos-_JM#polycard_client=search-nordic&position=36&search_layout=grid&type=item&tracking_id=a111a2b4-8d15-4d5d-94dd-4b57aae605dc"   target="_blank" rel="noopener">
-                                    <img src="images/Emprendimiento4.PNG" alt="Puertos" width="100%">
+                                    <img class="Card-casa-imagen" src="images/Emprendimiento4.PNG" alt="Puertos" width="100%">
                                 </a>
-                                <h5>Puertos</h5>
-                            </div>
+                                <h3 class="my-3 fs-4 card-casa-titulo">Emprendimiento 4</h3>
+                                <p class="text-center">Puertos</p>
+                                <p class="fw-medium text-center">USD 250,000.00</p>
+                                <BUtton class="card-cada-btn my-5">COMPRAR</BUtton>
+                            </section>        
 
-                            <div>
+                            <section class="Card-casa">
                                 <a href="https://terreno.mercadolibre.com.ar/MLA-1470405699-lotes-en-san-sebastian-_JM#polycard_client=search-nordic&position=37&search_layout=grid&type=item&tracking_id=a111a2b4-8d15-4d5d-94dd-4b57aae605dc"   target="_blank" rel="noopener">
-                                    <img src="images/Emprendimiento5.PNG" alt="SanSebastian" width="100%">
+                                    <img class="Card-casa-imagen" src="images/Emprendimiento5.PNG" alt="SanSebastian" width="100%">
                                 </a>
-                                <h5>San Sebastian</h5>
-                            </div>
+                                <h3 class="my-3 fs-4 card-casa-titulo">Emprendimiento 5</h3>
+                                <p class="text-center">San Sebastian</p>
+                                <p class="fw-medium text-center">USD 250,000.00</p>
+                                <BUtton class="card-cada-btn my-5">COMPRAR</BUtton>
+                            </section>        
 
-                            <div>
+                            <section class="Card-casa">
                                 <a href="https://casa.mercadolibre.com.ar/MLA-1991259394-casas-en-san-matias-_JM#polycard_client=search-nordic&position=30&search_layout=grid&type=item&tracking_id=cd36299c-d407-48c4-b741-856755ddc489" target="_blank" rel="noopener">
-                                    <img src="images/Emprendimiento6.PNG" alt="Altos DeMaschwitz" width="100%">
+                                    <img class="Card-casa-imagen" src="images/Emprendimiento6.PNG" alt="Altos DeMaschwitz" width="100%">
                                 </a>
-                                <h5>Altos De Maschwitz</h5>
-                            </div>
+                                <h3 class="my-3 fs-4 card-casa-titulo">Emprendimiento 6</h3>
+                                <p class="text-center">Altos DeMaschwitz</p>
+                                <p class="fw-medium text-center">USD 250,000.00</p>
+                                <BUtton class="card-cada-btn my-5">COMPRAR</BUtton>
+                            </section>       
 
-                            <div>
+                            <section class="Card-casa">
                                 <a href="https://terreno.mercadolibre.com.ar/MLA-1990359474-barrio-privado-canning-ezeiza-_JM#polycard_client=search-nordic&position=14&search_layout=grid&type=item&tracking_id=d49d94a0-18eb-4b2f-8603-544c04f336ad"   target="_blank" rel="noopener">
-                                    <img src="images/Emprendimiento7.PNG" alt="Las Victorias" width="100%">
-                                </a>
-                                <h5>Las Victorias</h5>
-                            </div>
-
-                            <div>
+                                    <img class="Card-casa-imagen" src="images/Emprendimiento7.PNG" alt="Las Victorias" width="100%">
+                                </a>            
+                                <h3 class="my-3 fs-4 card-casa-titulo">Emprendimiento 7</h3>
+                                <p class="text-center">Las Victorias</p>
+                                <p class="fw-medium text-center">USD 250,000.00</p>
+                                <BUtton class="card-cada-btn my-5">COMPRAR</BUtton>
+                            </section>         
+                        
+                            <section class="Card-casa">
                                 <a href="https://www.pridecanning.com/"   target="_blank" rel="noopener">
-                                    <img src="images/Emprendimiento8.PNG" alt="Pride Canning" width="100%">
-                                </a>
-                                <h5>Pride Canning</h5>
-                            </div>
-                         </div>
+                                    <img class="Card-casa-imagen" src="images/Emprendimiento8.PNG" alt="Pride Canning" width="100%">
+                                </a>            
+                                <h3 class="my-3 fs-4 card-casa-titulo">Emprendimiento 8</h3>
+                                <p class="text-center">Pride Canning</p>
+                                <p class="fw-medium text-center">USD 250,000.00</p>
+                                <BUtton class="card-cada-btn my-5">COMPRAR</BUtton>
+                            </section>        
+                        </Section>   
                     </div>
+                    
                     <div id="ColumnaArea2"></div>
             </div>
 
             <a href="https://wa.me/5491141992227" class="Whatsapp"   target="_blank" rel="noopener">
                 <img src="images/LogoWhatsapp.png" alt="Whatsapp" width="50" >
             </a>
-
-            
+           
         </main>
 
         <footer>
@@ -123,15 +184,15 @@
                     <td>
                         <div align="end">
                             <a href="https://www.facebook.com/mardiq.lorena/"   target="_blank" rel="noopener">   
-                                <img src="images/Facebook2.png" alt="facebook"  width="40" height="40">
+                                <img class="RedesSocialesImg" src="images/Facebook2.png" alt="facebook">
                             </a> 
                                 
                             <a href="https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Florenamarcasoli%2F&is_from_rle"   target="_blank" rel="noopener">
-                                <img src="images/Instragram2.png" alt="Instagran" width="40" height="40">
+                                <img class="RedesSocialesImg" src="images/Instragram2.png" alt="Instagran" >
                             </a>
                                 
                             <a href="https://maps.app.goo.gl/2WM25EeSVUyGeMreA"   target="_blank" rel="noopener">
-                                <img src="images/Maps.png" alt="ubicacion" width="40" height="40">
+                                <img class="RedesSocialesImg" src="images/Maps.png" alt="ubicacion">
                             </a>
                         </div>
                     </td>
@@ -145,5 +206,6 @@
                 </tr>
             <table>
         </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>        
     </body>
 </html>
