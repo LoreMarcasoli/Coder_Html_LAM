@@ -6,24 +6,57 @@
         <meta name="description" content="Encontra las mejores propiedades y proyectos de inversión de zona sur">
         <title>Inmobiliaria Diqmar</title>
         <link rel="stylesheet" href="../css/estilos.css">    
+        <!--Obtención Fuente-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pinyon+Script&display=swap" rel="stylesheet">
+        <!--Bootstrap*-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
     </head>
 
  <body>
-        <header>
-            <nav>
-                <a href="../index.html">
-                    <img src="../images/Logo_nuevo.PNG" alt="Logo" class="logo" width="90">
-                </a>
-                <ul>
-                    <li><a href="../index.html" target="_blank" rel="noopener">Inicio </a></li>
-                    <li><a href="../Pages/Comprar.html" target="_blank" rel="noopener">Comprar </a></li>
-                    <li><a href="../Pages/Alquilar.html" target="_blank" rel="noopener">Alquilar </a></li>
-                    <li><a href="../Pages/Servicios.html" target="_blank" rel="noopener">Servicios </a></li>
-                    <li><a href="../Pages/Nosotros.html" target="_blank" rel="noopener">Nosotros </a></li>
-                    <li><a href="../Pages/contacto.html"  target="_blank" rel="noopener">Contacto </a></li>
-                </ul>
-            </nav>
-        </header>
+    <header class="header-ppal">
+        <div class="oscurecer-fondo">
+            <div class="index-header">
+               <!--Bootstrap-->
+                    <nav class="navbar navbar-expand-lg">
+                        <div class="container-fluid">
+                            
+                            <img class="logotipo-imagen-nav" src="../images/Logo_nuevo.PNG" alt="Logo" class="logo">
+                            
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                    <li class="nav-item">
+                                        <a href="../index.html" target="_blank" rel="noopener"class="nav-link" href="#">INICIO</a>
+                                    </li>   
+                                    <li class="nav-item">
+                                        <a href="../Pages/Comprar.html" target="_blank" rel="noopener" class="nav-link" href="#">COMPRAR</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="../Pages/Alquilar.html" target="_blank" rel="noopener" class="nav-link" href="#">ALQUILAR</a>
+                                    </li>     
+                                    <li class="nav-item">
+                                        <a href="../Pages/Servicios.html" target="_blank" rel="noopener" class="nav-link" href="#">SERVICIOS</a>
+                                    </li>     
+                                    <li class="nav-item">
+                                        <a href="../Pages/Nosotros.html" target="_blank" rel="noopener" class="nav-link" href="#">NOSOTROS</a>
+                                    </li>                                      
+                                    <li class="nav-item">
+                                        <a a href="../Pages/contacto.html"  target="_blank" rel="noopener" class="nav-link" href="#">CONTACTO</a>
+                                    </li>                                                                                          
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                    <!--Bootstrap-->
+            </div>
+        </div>    
+    </header>
 
 
 
@@ -72,5 +105,6 @@
                 </tr>
             <table>
         </footer>
-</body>    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>    
+    </body>    
 </html>

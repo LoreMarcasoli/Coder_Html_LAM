@@ -1,169 +1,216 @@
+/*Estilos Gral*/
 *{
     padding: 0px; /*espaciado interno 1er param arriba 2do param izq. 3er param abajo*/
-   /* margin: 0px; espaciado externo*/
+    font-family: 'Times New Roman', Times, serif;
+               /* margin: 0px; espaciado externo*/
 }
 
-header {
-        background-color: #89ce36;
-        padding: 1%;/*20px;*/
-        text-align: center;
-        font-size: 16px;
-        box-sizing: border-box;
-        font-style: italic;
-        font-family:'Times New Roman', Times, serif;
-} 
-
-header nav{
-    display: flex;
-    flex-direction: row;
-    border: solid 2px white;    
-    align-items: center;
-}
-
-header ul{
-    
-        display: flex;
-        flex-direction: row;
-        list-style:  none;
-        align-items: center;
-        text-decoration: none;
-}
-
-header ul li{
-    margin-left: 10px;
-    padding: 10% 20%;
-    justify-content: start;
-    align-items: center;
-}
-
-header ul li a{
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 18px;
-    align-items: center;
-}
-
-header .logo {
-padding: 20%;/*20px;*/
-}   
-
-main{ 
-    padding:50px 50px;
-    box-sizing: border-box;
-    /*border: solid 2px black;*/
-}
-
-main h1{
-    margin-top: 45px;
-    font-size: 22px;
-    text-align: center;
-    font-style: italic;
-    font-family:'Times New Roman', Times, serif;
-}
-
-main h3{
-    font-size: 18px;
-    text-align: center;
-    font-style: italic;
-    font-family:'Times New Roman', Times, serif;
-}
-
-table{
+.oscurecer-fondo{
+    position: absolute;
     width: 100%;
-    max-width: 700px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
 }
+/*Estilos Header*/
 
-.Whatsapp{
-    position: fixed;
-    right: 110px;
-    bottom: 30px;
-}
+        .logotipo-imagen {
+            /*width: 8rem;*/
+            margin-left: 10%;
+            border: solid 2px red;
+            margin-top: 4rem;
+            object-fit: cover;
+        }
+
+        .logotipo-imagen-nav {
+            width: 8rem;
+            margin-top: 4rem;
+            border: solid 2px blueviolet;
+        }
+
+        .index-header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            justify-items: center;
+            height: 4rem;
+            padding: 3rem 3rem;
+        }
+
+        .index-header ul {
+                display: flex;
+                list-style: none;
+                column-gap:3rem;
+                padding-left: 5rem;
+                padding-top: 3rem;
+        }
+
+        .index-header ul a{
+                text-decoration: none;
+                color: #ffffff;
+                font-weight: bold;
+                /*+background-color: #edc18b;*/
+        }
+
+        .header-ppal{   
+            background-image: url(../images/Header7.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 18vh;
+            position: relative;
+        }
+
+/*Estilos Main*/
+        main{ 
+            padding:50px 50px;
+            box-sizing: border-box;
+            /*border: solid 2px black;*/
+        }
+
+        main h1{
+            margin-top: 45px;
+            font-size: 22px;
+            text-align: center;
+            font-style: italic;
+            font-weight: bold;
+        }
+
+        main h3{
+            font-size: 18px;
+            text-align: center;
+            font-style: italic;
+            font-weight: bold;
+        }
+
+        table{
+            width: 100%;
+            max-width: 700px;
+        }
+
+        .Whatsapp{
+            position: fixed;
+            right: 110px;
+            bottom: 30px;
+        }
 
 
-#TextoFamilia{
-    color:black;
-    font-size: 16px;
-    font-weight: bold;
-    font-style: italic;
-    justify-items: center;
-}
+        #TextoFamilia{
+            color:black;
+            font-size: 18px;
+            font-weight: bold;
+            font-style: italic;
+            justify-items: center;
+        }
 
-footer {
-    background-color: #ede7e2;
-    padding: 20px;
-    flex-direction: row;
-}
+        .contenedorGrid div{
+            text-align: center;
+            background-color: #eeeeee;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
 
-footer table tr td p{
-    font-size: 15px;
-    font-family:'Times New Roman', Times, serif;
-    font-weight: bold;
-    color:brown;
-}
+        .contenedorfamilia{   
+            width: 60%;
+            margin-left: 20%;
+            margin-right: 20%;
+            display: grid;}
 
-footer table tr td ul{
-    text-decoration: none;
-    font-size: 13px;
-    font-family:'Times New Roman', Times, serif;
-    font-weight: bold;
-    color:brown;
-    list-style:  none;
+        #ContenedorArea{
+            display: grid;
+            height: auto;
+            grid-template-areas: "Columna Contenido Columna2" ;
+            grid-template-columns: 15% 70% 15%;
+            grid-template-rows: auto ;
+            }
+
+        #ColumnaArea{
+            grid-area: Columna;
+            align-content:center;
+            align-items: center;
+            padding: 5%;
+            background-color:rgb(250, 179, 96);
+        }
+
+        #ColumnaArea2{
+            grid-area: Columna2;
+            background-color: rgb(250, 179, 96);
+        }
+
+        #ContenidoArea{
+            grid-area: Contenido;
+            background-color: rgb(235, 234, 230);
+        }            
+            
+        .index-header-btn{
+            border-radius: 0.5rem;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .Card-casa-container{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap:1rem;
+            row-gap: 4rem;
+            padding-top: 20px;
+        }
+        .Card-casa{
+            width: 25rem;
+            border: 1px solid rgba(0, 0, 0, 0.281);
+        }
+        .Card-casa-imagen{
+            height: 15rem;
+            width: 100%;
+            object-fit: cover;
+        }
+        .card-casa-titulo{
+            font-weight: 600;
+        }
+        .card-cada-btn{
+            border: none;
+            background-color: black;
+            color:#ffffff;
+            padding: 0.5rem;
+            width: 100%;
+        }
 
 
-}
+/*Estilos Footer*/
 
-.contenedorGrid{   
-    margin-left: 8%;
-    margin-right: 8%;
-    width: 80%;
-    height: 80%;
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: 33.33% 33.33% 33.33%;
-    margin-top: 10%;
-    column-gap: 10px;
-    row-gap: 50px;
-}
+        footer {
+            background-color: #ede7e2;
+            padding: 20px;
+            flex-direction: row;
+        }
 
-.contenedorGrid div{
-    text-align: center;
-    background-color: #eeeeee;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
+        footer table tr td p{
+            font-size: 15px;
+            font-family:'Times New Roman', Times, serif;
+            font-weight: bold;
+            color:brown;
+        }
 
-.contenedorfamilia{   
-    width: 60%;
-    margin-left: 20%;
-    margin-right: 20%;
-    display: grid;}
+        footer table tr td ul{
+            font-size: 13px;
+            font-family:'Times New Roman', Times, serif;
+            font-weight: bold;
+            list-style:  none;
+        }
 
-#ContenedorArea{
-    display: grid;
-    height: auto;
-    grid-template-areas: "Columna Contenido Columna2" ;
-    grid-template-columns: 15% 70% 15%;
-    grid-template-rows: auto ;
-    }
+        footer table tr td ul a{
+            text-decoration: none;
+            color:brown;
+        }
 
-#ColumnaArea{
-    grid-area: Columna;
-    align-content:center;
-    align-items: center;
-    padding: 5%;
-    background-color:rgb(250, 179, 96);
-}
+        .RedesSocialesImg{
+            width: 40px;
+            height: 40px;
+            object-fit: cover;
+        }
 
-#ColumnaArea2{
-    grid-area: Columna2;
-    background-color: rgb(250, 179, 96);
-}
 
- #ContenidoArea{
-    grid-area: Contenido;
-    background-color: rgb(235, 234, 230);
-}
+/*Resolución*/
 
 @media (max-width:2000px) {
 .contenedorGrid{   
@@ -177,6 +224,7 @@ footer table tr td ul{
     margin-top: 10%;
     column-gap: 10px;
     row-gap: 50px;
+    font-weight: bold;
 }
 
 }
@@ -213,6 +261,7 @@ h5{
     margin-top: 10%;
     column-gap: 10px;
     row-gap: 50px;
+    font-weight: bold;
 }
 
 }
