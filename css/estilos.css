@@ -1,29 +1,39 @@
+*{
+    padding: 0px; /*espaciado interno 1er param arriba 2do param izq. 3er param abajo*/
+   /* margin: 0px; espaciado externo*/
+}
+
 header {
         background-color: #89ce36;
-        padding: 20px;
-        
+        padding: 1%;/*20px;*/
         text-align: center;
         font-size: 16px;
         box-sizing: border-box;
         font-style: italic;
         font-family:'Times New Roman', Times, serif;
 } 
+
 header nav{
     display: flex;
     flex-direction: row;
     border: solid 2px white;    
+    align-items: center;
 }
 
 header ul{
+    
         display: flex;
         flex-direction: row;
         list-style:  none;
+        align-items: center;
+        text-decoration: none;
 }
 
 header ul li{
     margin-left: 10px;
-    padding: 10%;
+    padding: 10% 20%;
     justify-content: start;
+    align-items: center;
 }
 
 header ul li a{
@@ -31,10 +41,11 @@ header ul li a{
     text-decoration: none;
     font-weight: bold;
     font-size: 18px;
+    align-items: center;
 }
 
 header .logo {
-padding: 20px;
+padding: 20%;/*20px;*/
 }   
 
 main{ 
@@ -42,7 +53,6 @@ main{
     box-sizing: border-box;
     /*border: solid 2px black;*/
 }
-
 
 main h1{
     margin-top: 45px;
@@ -93,11 +103,13 @@ footer table tr td p{
 }
 
 footer table tr td ul{
+    text-decoration: none;
     font-size: 13px;
     font-family:'Times New Roman', Times, serif;
     font-weight: bold;
     color:brown;
     list-style:  none;
+
 
 }
 
@@ -151,4 +163,56 @@ footer table tr td ul{
  #ContenidoArea{
     grid-area: Contenido;
     background-color: rgb(235, 234, 230);
+}
+
+@media (max-width:2000px) {
+.contenedorGrid{   
+    margin-left: 8%;
+    margin-right: 8%;
+    width: 80%;
+    height: 80%;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 33.33% 33.33% 33.33%;
+    margin-top: 10%;
+    column-gap: 10px;
+    row-gap: 50px;
+}
+
+}
+
+@media (max-width:600px) {
+
+main h1{
+    margin-top: 25px;
+    font-size: 12px;
+}
+
+main h3{
+    font-size: 9px;
+}
+
+h5{
+        font-size: 0.43em;
+}
+
+#TextoFamilia{
+    font-size: 8px;
+    font-weight: bold;
+    font-style: italic;
+    justify-items: center;
+}
+.contenedorGrid{   
+    margin-left: 8%;
+    margin-right: 8%;
+    width: 80%;
+    height: 80%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    margin-top: 10%;
+    column-gap: 10px;
+    row-gap: 50px;
+}
+
 }
