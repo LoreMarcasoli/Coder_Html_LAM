@@ -75,11 +75,25 @@
             font-weight: bold;
         }
 
+        main h2{
+            margin-top: 30px;
+            font-size: 20px;
+            text-align: center;
+            font-style: italic;
+            font-weight: bold;
+        }
+
         main h3{
             font-size: 18px;
             text-align: center;
             font-style: italic;
             font-weight: bold;
+        }
+
+        .ListaServicios{
+            margin-left: 15%;
+            margin-right: 15%;
+
         }
 
         table{
