@@ -1,0 +1,20 @@
+
+@import "Variables";
+@import "Footer";
+@import "Main";
+@import "Header";
+
+
+/*Estilos Gral*/
+*{
+    padding: 0px; /*espaciado interno 1er param arriba 2do param izq. 3er param abajo*/
+    font-family: 'Times New Roman', Times, serif;
+               /* margin: 0px; espaciado externo*/
+}
+
+.oscurecer-fondo{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}    

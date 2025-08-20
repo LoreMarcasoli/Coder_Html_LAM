@@ -1,0 +1,50 @@
+@import "Variables";
+
+/*Estilos Header*/
+
+        .logotipo-imagen {
+            /*width: 8rem;*/
+            margin-left: 10%;
+            border: solid 2px red;
+            margin-top: 4rem;
+            object-fit: cover;
+        }
+
+        .logotipo-imagen-nav {
+            width: 8rem;
+            margin-top: 4rem;
+            border: solid 2px blueviolet;
+        }
+
+        .index-header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            justify-items: center;
+            height: 4rem;
+            padding: 3rem 3rem;
+        }
+
+        .index-header ul {
+                display: flex;
+                list-style: none;
+                column-gap:3rem;
+                padding-left: 5rem;
+                padding-top: 3rem;
+        }
+
+        .index-header ul a{
+                text-decoration: none;
+                color: #ffffff;
+                font-weight: bold;
+                /*+background-color: #edc18b;*/
+        }
+
+        .header-ppal{   
+            background-image: url(../images/Header7.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 18vh;
+            position: relative;
+        }

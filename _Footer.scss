@@ -1,0 +1,35 @@
+@import "Variables";
+
+.Font_footer {
+            font-family:$footer-font-family;
+            font-weight: $footer-font-weight;
+            }
+
+footer {
+            background-color: #ede7e2;
+            padding: 20px;
+            flex-direction: row;
+        }
+
+footer table tr td p{
+            @extend .Font_footer;
+            font-size: 15px;
+            color:brown;
+        }
+
+footer table tr td ul{
+            @extend .Font_footer;
+            font-size: 13px;
+            list-style:  none;
+        } 
+
+footer table tr td ul a{
+            text-decoration: none;
+            color:brown;
+        }
+
+.RedesSocialesImg{
+            width: 40px;
+            height: 40px;
+            object-fit: cover;
+        }
