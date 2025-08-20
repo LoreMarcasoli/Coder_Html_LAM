@@ -14,7 +14,8 @@
         <!--Bootstrap*-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
 
-    </head>
+
+</head>
 
  <body>
     <header class="header-ppal">
@@ -56,9 +57,77 @@
         </div>    
     </header>
 
+    <main>
+            <div id="ContenedorArea">
+                <div id="ColumnaArea">
+                </div>
+
+                <div id="ContenidoArea">
+                        
+                        <h1>Dejanos tus datos, pronto nos pondremos en contacto con vos</h1>
+                        <h3>Facilitanos la siguiente informacion, para un rapida gestión</h3>
+                        <h3>Formulario de Contacto</h3>
+                    <Section class="Card-casa-container">      
+                        
+                        <div class="form-container1">
+
+                            <form class="form"action="/submit" method="post">
+                                <label class="label" for="nombre">Nombre y Apellido</label>
+                                <input class="input" type="text" name="nombre" id="nombre" required>
+
+                                <label class="label" for="email">Email</label>
+                                <input class="input" type="email" name="email" id="email" required>
+
+                                <label class="label" for="telefono">Teléfono</label>
+                                <input class="input" type="tel" name="telefono" id="telefono" pattern="[0-9]+" required>
+
+                                <label class="label" for="tipo-operacion">Tipo de Operación</label>
+                                <select name="tipo_operacion" id="tipo-operacion" required>
+                                    <option value="" disabled selected>Seleccionar...</option>
+                                    <option value="compra">Compra</option>
+                                    <option value="alquiler">Alquiler</option>
+                                    <option value="temporario">Temporario</option>
+                                </select>
+
+                                <label class="label" for="tipo-propiedad">Tipo de Propiedad</label>
+                                <select name="tipo_prodiedad" id="tipo-propiedad" required>
+                                    <option value="" disabled selected>Seleccionar...</option>
+                                    <option value="Casa">Casa</option>
+                                    <option value="Departamento">Departamento</option>
+                                    <option value="Duplex/Triplex">Duplex/Tiplex</option>
+                                    <option value="Lote/Terreno">Lote/terreno</option>
+                                    <option value="Oficinas">Oficinas</option>
+                                    <option value="Locales">Locales</option>
+                                </select>                                
+
+                                <label class="label" for="Ubicación">Ubicación</label>
+                                <select name="ubicacion" id="ubicacion" required>
+                                <option value="" disabled selected>Seleccionar...</option>
+                                <option value="">Buenos Aires</option>
+                                <option value="">Cordoba</option>
+                                <option value="">Entre Ríos</option>
+                                <option value="">Santa Fe</option>
+                                <option value="">Mendoza</option>
+                                <option value="">San Juan</option>
+                                <option value="">Otros</option>
+                                </select>                                
+
+                                <button class="button" type="submit">Enviar</button>
+                            </form>
+                        </div>                                
+
+                    </Section>   
+                </div>
+                    
+            <div id="ColumnaArea2"></div>
+            </div>
+
+            <a href="https://wa.me/5491141992227" class="Whatsapp"   target="_blank" rel="noopener">
+                <img src="../images/LogoWhatsapp.png" alt="Whatsapp" width="50" >
+            </a>
 
 
-    <main></main>
+    </main>
 
 
 

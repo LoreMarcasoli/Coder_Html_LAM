@@ -11,24 +11,24 @@ footer {
             flex-direction: row;
         }
 
-footer table tr td p{
+        footer table tr td p{
             @extend .Font_footer;
             font-size: 15px;
             color:brown;
         }
 
-footer table tr td ul{
+        footer table tr td ul{
             @extend .Font_footer;
             font-size: 13px;
             list-style:  none;
         } 
 
-footer table tr td ul a{
+        footer table tr td ul a{
             text-decoration: none;
             color:brown;
         }
 
-.RedesSocialesImg{
+        .RedesSocialesImg{
             width: 40px;
             height: 40px;
             object-fit: cover;

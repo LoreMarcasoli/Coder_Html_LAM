@@ -60,6 +60,7 @@ main h2 {
 }
 
 main h3 {
+  margin-top: 18px;
   font-size: 18px;
   text-align: center;
   font-style: italic;
@@ -84,10 +85,11 @@ table {
 
 #TextoFamilia {
   color: black;
+  margin-top: 0px;
   font-size: 18px;
-  font-weight: bold;
+  text-align: center;
   font-style: italic;
-  justify-items: center;
+  font-weight: bold;
 }
 
 .contenedorGrid div {
@@ -127,8 +129,7 @@ table {
 
 #ContenidoArea {
   grid-area: Contenido;
-  /*background-color: rgb(235, 234, 230);*/
-  /*background-color: rgb(63, 17, 148);*/
+  background-color: rgb(235, 234, 230);
 }
 
 .index-header-btn {
@@ -188,19 +189,27 @@ table {
 @media (max-width: 600px) {
   main h1 {
     margin-top: 25px;
-    font-size: 12px;
+    font-size: 21px;
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
   }
   main h3 {
+    margin-top: 0px;
     font-size: 9px;
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
   }
   h5 {
     font-size: 0.43em;
   }
-  #TextoFamilia {
+  TextoFamilia {
+    margin-top: 0px;
     font-size: 8px;
-    font-weight: bold;
+    text-align: center;
     font-style: italic;
-    justify-items: center;
+    font-weight: bold;
   }
   .contenedorGrid {
     margin-left: 8%;
@@ -216,6 +225,61 @@ table {
     font-weight: bold;
   }
 }
+/* Contenedor principal para centrar el formulario */
+.form-container1 {
+  background: white;
+  padding: 30px 40px;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  max-width: 450px;
+  width: 90%;
+  display: flex;
+}
+
+.form {
+  width: 100%;
+}
+
+.form-group {
+  margin-bottom: 18px;
+}
+
+.label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+  color: #444;
+}
+
+.input, select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  box-sizing: border-box;
+  transition: border-color 0.3s;
+}
+
+.input:focus, select:focus {
+  border-color: #007BFF;
+  outline: none;
+}
+
+.button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 30px;
+  background-color: #007BFF;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
 /*$ContenidoArea_background-color: rgba(159, 24, 24, 1);*/
 /*Footer*/
 /*Estilos Header*/
@@ -262,7 +326,7 @@ table {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 18vh;
+  height: 20vh;
   position: relative;
 }
 
